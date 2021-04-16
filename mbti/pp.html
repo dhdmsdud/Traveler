@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>웹투어 여행 MBTI 페이지</title>
+	<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+	<link rel="stylesheet" href="css/style2.css">
+	<meta property="og:title" content="여행은 웹투어">
+	<meta property="og:url" content="http://m.webtour.com/"/>
+	<meta property="og:site_name" content="웹투어 여행 MBTI"/>
+	<meta property="og:type" content="website"/>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PB6ZMD7');</script>
+	<!-- End Google Tag Manager -->
+</head>
+<body>
+	<div class="question-main"></div>
+
+	<div class="question on">
+		<div class="in">
+			<span class="num">Q 01.</span>
+			<div class="name">여행을 떠날 때 계획은</div>
+			<label><input type="radio" name="que1" value="P" onclick="nextStep(this);"><b>내가 걷는 길이 곧 여행코스</b></label>
+			<label><input type="radio" name="que1" value="J" onclick="nextStep(this);"><b>계획은 필수</b></label>
+		</div>
+	</div>
+	<div class="question">
+		<div class="in">
+			<span class="num">Q 02.</span>
+			<div class="name">여행 경비는</div>
+			<label><input type="radio" name="que2" value="P" onclick="nextStep(this);"><b>당장 국제거지만 안되면 되지!</b></label>
+			<label><input type="radio" name="que2" value="J" onclick="nextStep(this);"><b>걸어다니는 계산기로 변신</b></label>
+		</div>
+	</div>
+	<div class="question">
+		<div class="in">
+			<span class="num">Q 03.</span>
+			<div class="name">여행을 다녀온 후</div>
+			<label><input type="radio" name="que3" value="P" onclick="nextStep(this);"><b>홈스윗홈.. 침대로 점프!</b></label>
+			<label><input type="radio" name="que3" value="J" onclick="nextStep(this);"><b>캐리어를 열고 물건을 정리한다</b></label>
+		</div>
+	</div>
+
+
+	<div class="question">
+		<div class="in">
+			<span class="num">Q 04.</span>
+			<div class="name">여행지에서 식사할 때</div>
+			<label><input type="radio" name="que4" value="S" onclick="nextStep(this);"><b>유~명한 맛집을 작정하고 노리는 헌터</b></label>
+			<label><input type="radio" name="que4" value="N" onclick="nextStep(this);"><b>처음 본 순간 사랑에 빠진 길거리 가게</b></label>
+		</div>
+	</div>
+	<div class="question">
+		<div class="in">
+			<span class="num">Q 05.</span>
+			<div class="name">여행지에서 길을 잃었을 때</div>
+			<label><input type="radio" name="que5" value="S" onclick="nextStep(this);"><b>왔던 길로 돌아가는 헨젤과 그레텔st.</b></label>
+			<label><input type="radio" name="que5" value="N" onclick="nextStep(this);"><b>자꾸 걸어 나가면 길이 있겠지, 지구는 둥그니까</b></label>
+		</div>
+	</div>
+	<div class="question">
+		<div class="in">
+			<span class="num">Q 06.</span>
+			<div class="name">화려한 건축물을 보며 드는 생각은</div>
+			<label><input type="radio" name="que6" value="S" onclick="nextStep(this);"><b>"어떤 방법으로 지었을까?" 고민한다</b></label>
+			<label><input type="radio" name="que6" value="N" onclick="nextStep(this);"><b>"와 멋있다..." 감탄한다</b></label>
+		</div>
+	</div>
+
+
+	<div class="question">
+		<div class="in">
+			<span class="num">Q 07.</span>
+			<div class="name">아침에 늦잠 잔 친구에게</div>
+			<label><input type="radio" name="que7" value="F" onclick="nextStep(this);"><b>"여행이 역시 피곤하지."</b></label>
+			<label><input type="radio" name="que7" value="T" onclick="nextStep(this);"><b>"내일은 시간 지키자."</b></label>
+		</div>
+	</div>
+	<div class="question">
+		<div class="in">
+			<span class="num">Q 08.</span>
+			<div class="name">친구에게 차 사고가 났다고 전화 왔을 때 나의 대답은</div>
+			<label><input type="radio" name="que8" value="F" onclick="nextStep(this);"><b>"괜찮아? ㅠㅠ 다친 데는 없어?"</b></label>
+			<label><input type="radio" name="que8" value="T" onclick="nextStep(this);"><b>"보험 들었어?"</b></label>
+		</div>
+	</div>
+	<div class="question">
+		<div class="in">
+			<span class="num">Q 09.</span>
+			<div class="name">친구가 쓸데없는 기념품을 살 때</div>
+			<label><input type="radio" name="que9" value="F" onclick="nextStep(this);"><b>"그래 니가 행복하다면..."</b></label>
+			<label><input type="radio" name="que9" value="T" onclick="nextStep(this);"><b>"그거 결국 쓰레기 된다"</b></label>
+		</div>
+	</div>
+
+	<div class="question">
+		<div class="in">
+			<span class="num">Q 10.</span>
+			<div class="name">나는 여행지를 선택할 때 주로</div>
+			<label><input type="radio" name="que10" value="E" onclick="nextStep(this);"><b>사람이 많은 도시로</b></label>
+			<label><input type="radio" name="que10" value="I" onclick="nextStep(this);"><b>나무가 많은 자연으로</b></label>
+		</div>
+	</div>
+	<div class="question">
+		<div class="in">
+			<span class="num">Q 11.</span>
+			<div class="name">숙소를 구할 때</div>
+			<label><input type="radio" name="que11" value="E" onclick="nextStep(this);"><b>저녁에 바비큐 파티를 여는 곳</b></label>
+			<label><input type="radio" name="que11" value="I" onclick="nextStep(this);"><b>조용하고 아늑한 곳</b></label>
+		</div>
+	</div>
+	<div class="question">
+		<div class="in">
+			<span class="num">Q 12.</span>
+			<div class="name">여행지에 대한 감상을</div>
+			<label><input type="radio" name="que12" value="E" onclick="nextStep(this);"><b>말로 내뱉어야 직성이 풀린다</b></label>
+			<label><input type="radio" name="que12" value="I" onclick="nextStep(this);"><b>내 마음 속에 저_장, 마음에 담고 느낀다</b></label>
+		</div>
+	</div>
+	<div class="question loader">
+		<div class="in">
+			<div class="ico"><b></b><b></b><b></b></div>
+			<div class="name">나에게 어울리는 <br>
+			여행지로 이동 중...</div>
+		</div>
+	</div>
+
+<script>
+	var changTime = false;
+	function nextStep(obj){
+		$(obj).parent().addClass('on');
+		if(!changTime){
+			changTime = true;
+			setTimeout(function(){
+				var prevObj = $('.question.on');
+				var nextObj = prevObj.next('.question');
+				nextObj.addClass('on');
+				prevObj.removeClass('on');
+
+				if(nextObj.hasClass('loader')){
+					nextObj.addClass('on');
+					mbtiResult();
+				}
+				changTime = false;
+			},400);
+		}
+	}
+
+	var ei,ft,sn,pj;
+	function mbtiResult(){
+		ei =	typeResult(10);
+		sn =	typeResult(4);
+		ft =	typeResult(7);
+		pj =	typeResult(1);
+		setTimeout(function(){
+			location.href = "/GEvent/mbti/result.asp?type="+ei+sn+ft+pj;
+		},3000);
+
+	}
+
+	function typeResult(idx){
+		var r = [];
+		r[0] = $('input[name=que'+idx+']:checked').val();
+		r[1] = $('input[name=que'+(idx+1)+']:checked').val();
+		r[2] = $('input[name=que'+(idx+2)+']:checked').val();
+		var resultValue;
+		if(r[0]==r[1] || r[0]==r[2]){
+			resultValue = r[0];
+		}else if(r[1]==r[2]){
+			resultValue = r[1];
+		}
+
+		return resultValue;
+	}
+</script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PB6ZMD7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+</html>
