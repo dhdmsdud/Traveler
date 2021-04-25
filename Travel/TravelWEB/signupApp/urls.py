@@ -11,6 +11,6 @@ urlpatterns = [
     path('signupForm/', views.signupForm, name='signupForm'),
     path('survey/', views.survey, name='survey'),
     path('recommend/', views.recommend, name='recommend'),
-    # path('index1/', views.index1, name='index1'),
-    # path('n_map/', views.n_map, name='n_map'),
+    path('mypage/', views.data, name='mypage'),
+    path('search/', views.search, name='search'),
 ]

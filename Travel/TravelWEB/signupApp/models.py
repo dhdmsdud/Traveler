@@ -4,21 +4,6 @@ from django.db import models
 
 
 #----------------------< 옵션값 >----------------------#
-theme_choice = {
-    ('A01', '자연관광지'),
-    ('A02', '역사관광지'),
-    ('A02', '휴양관광지'),
-    ('A02', '체험관광지'),
-    ('A02', '문화시설'),
-    ('A02', '축제'),
-    ('A02', '공연/행사'),
-    ('A03', '레포츠'),
-    ('A04', '쇼핑'),
-    ('A05', '맛집'),
-    ('B02', '숙박'),
-}
-
-
 address_choice = {
     ('1', '서울'),
     ('2', '인천'),
@@ -39,8 +24,6 @@ address_choice = {
     ('39', '제주도'),
 }
 
-
-
 sex_choice = {
     ('S01', '남자'),
     ('S02', '여자'),
@@ -48,11 +31,11 @@ sex_choice = {
 
 #----------------------< 설문조사 >----------------------#
 class Survey(models.Model) :
-    Mail    = models.CharField(max_length=10, verbose_name='아이디')
+    Mail    = models.CharField(max_length=10, verbose_name='아이디', null=True)
     Theme   = models.CharField(max_length=10, verbose_name='테마')
 
     def __str__(self):
-        return self.Mail + " , " + self.Theme
+        return self.Mail+" , " + self.Theme
 
 
 

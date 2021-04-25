@@ -50,13 +50,10 @@
         </div>
       </section>
     </form>
-
-<!--    <script src="js/index.js"></script>-->
     <script
   src="https://code.jquery.com/jquery-3.6.0.js"
   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
   crossorigin="anonymous"></script>
-
 
 
     <script>
@@ -70,26 +67,6 @@
       $("#loginBtn").click(function() {
             alert('로그인되었습니다.')
             $('#loginFrm').submit()
-<!--        var formData = $('#loginFrm').serialize();-->
-<!--        $.ajax({-->
-<!--            cache : false,-->
-<!--            url : "{% url 'loginCheck' %}" ,-->
-<!--            type : 'POST',-->
-<!--            data : formData,-->
-<!--            success : function(data){-->
-<!--                var result = data['result']-->
-<!--                var login = data['login']-->
-<!--                if (login=='Y') {-->
-<!--                   $("#loginFrm").attr('action', "{% url 'recommend' %}").submit()-->
-<!--                }else{-->
-<!--                   alert(result);-->
-<!--                }-->
-<!--            },-->
-<!--            error : function(xhr,status,)-->
-<!--            {-->
-<!--                alert("로그인 실패");-->
-<!--            },-->
-<!--        });-->
       })
     })
   </script>
